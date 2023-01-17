@@ -1,0 +1,143 @@
+body {
+  background-color: #e7eaf6;
+}
+textarea {
+  margin: 20px;
+  width: 8.5in;
+  height: 11in;
+  overflow: auto;
+  resize: none;
+  margin: 20px;
+  }
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .hidden {
+    display: none; /* This will hide the checkboxes */
+  }
+  
+  .bold-label, .italic-label, .underline-label {
+    font-size: 20px;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .bold-label:active, .italic-label:active, .underline-label:active {
+    background-color: #999;
+  }
+  
+  #bold:checked ~ .bold-label{
+    background-color: #333;
+    color: #ccc;
+  }
+  #italic:checked ~ .italic-label{
+    background-color: #333;
+    color: #ccc;
+  }
+  #underline:checked ~ .underline-label{
+    background-color: #333;
+    color: #ccc;
+  }
+  
+  
+  .darkened {
+    background-color: #333;
+    color: #fff;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  body {
+    padding-top: 20px;
+  }
+  button {
+    background: linear-gradient(#f2f2f2, #e6e6e6);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  
+  button:active {
+    background: linear-gradient(#ccc, #ddd);
+    border-color: white;
+  }
+  nav {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+  }
+  .nav-content {
+    background-color: #a2a8d3; /* This will set the background color for the nav content */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-styling-form form {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+  }
+  
+  .text-styling-form input[type="number"] {
+    width: 4em;
+    margin-right: 0.5em;
+  }
+  
+  .text-styling-form select {
+    margin-right: 0.5em;
+  }
+  
+  .text-styling-form button {
+    margin-left: 0.5em;
+  }
+  .align-left {
+    background-image: url('imgs/left-align.png');
+    background-size: contain; /* This will make sure the image is contained within the button */
+    background-repeat: no-repeat; /* This will make sure the image is not repeated */
+    width: 30px; /* You can adjust the width and height as per your image */
+    height: 30px;
+    background-color: white; /* This will make the button transparent */
+    border: none; /* This will remove the border around the button */
+  }
+  .align-center {
+    background-image: url('imgs/center-align.png');
+    background-size: contain; /* This will make sure the image is contained within the button */
+    background-repeat: no-repeat; /* This will make sure the image is not repeated */
+    width: 30px; /* You can adjust the width and height as per your image */
+    height: 30px;
+    background-color: white; /* This will make the button transparent */
+    border: none; /* This will remove the border around the button */
+  }
+  .align-right {
+    background-image: url('imgs/right-align.png');
+    background-size: contain; /* This will make sure the image is contained within the button */
+    background-repeat: no-repeat; /* This will make sure the image is not repeated */
+    width: 30px; /* You can adjust the width and height as per your image */
+    height: 30px;
+    background-color: white; /* This will make the button transparent */
+    border: none; /* This will remove the border around the button */
+  }
+  .capitalize-button {
+    font-size: 20px;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Editor</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+    <div class="text-styling-form">
+      <form>
+        Font size: <input type="number" id="font-size" value="16" onchange="updateFontSize()">
+        Font: 
+        <select id="font-family" onchange="updateFontFamily()">
+          <option value="Arial">Arial</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+
+
+            <label for="bold" class="bold-label">B</label>
+            <input type="checkbox" id="bold" class="hidden" onchange="updateBold()">
+            <label for="italic" class="italic-label">I</label>
+            <input type="checkbox" id="italic" class="hidden" onchange="updateItalic()">
+            <label for="underline" class="underline-label">U</label>
+            <input type="checkbox" id="underline" class="hidden" onchange="updateUnderline()">
+
+
+
+
+            <button type="button" class="align-left" onclick="alignLeft()"></button>
+            <button type="button" class="align-center" onclick="alignCenter()"></button>
+            <button type="button" class="align-right" onclick="alignRight()"></button>
+            <button type="button" class="capitalize-button" onclick="capitalize()">CAPITALIZE</button>
+
+      </form>
+    </div>
+    </div>
+  </nav>
+  
+
+  <div id="container">
+    <textarea id="editor"></textarea>
+  </div>
+    </body>
+</html>
